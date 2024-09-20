@@ -18,10 +18,10 @@ const CartData: React.FC<CartDataProps> = ({ item }) => {
   const { id, title, price, images, total } = item;
   const { removeFromCart, decreaseAmount, increaseAmount } = useProductDataCart();
 
-  const [isMounted, setIsMounted] = useState(false);
+  const [isOpen, setOpen] = useState(false);
 
   useEffect(() => {
-    setIsMounted(true); 
+    setOpen(true); 
   }, []);
 
   return (
@@ -33,9 +33,8 @@ const CartData: React.FC<CartDataProps> = ({ item }) => {
       "
     >
       <div className="w-full min-h-[150px] flex items-center gap-x-4">
-        <Link href={`/productList/${id}`}>
-          {/* Only render Image if the component has mounted */}
-          {isMounted && (
+        <Link href={`/product/${id}`}>
+          {isOpen && (
             <Image
               className="max-w-[80px]"
               src={images[0]}
