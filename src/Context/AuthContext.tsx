@@ -39,7 +39,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
       const data = await response.json();
       localStorage.setItem("authToken", data.access_token);
       setIsAuthenticated(true);
-      router.push("/profile"); 
+      router.push("/"); 
     } catch (error) {
       Swal.fire("ERROR!", "Login failed", "error");
     }

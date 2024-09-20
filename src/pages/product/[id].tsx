@@ -22,8 +22,7 @@ const ProductPage: NextPage<ProductPageProps> = ({ productData }) => {
   const handlecart = () => {
     addToCart(1, productData);
   };
-
-  // Fetch the total quantity from the cart data.
+  
   const Totalproducts = product.find((item) => item.id === productData.id);
 
   return (

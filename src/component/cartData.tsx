@@ -18,11 +18,10 @@ const CartData: React.FC<CartDataProps> = ({ item }) => {
   const { id, title, price, images, total } = item;
   const { removeFromCart, decreaseAmount, increaseAmount } = useProductDataCart();
 
-
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setIsMounted(true); // Set mounted state to true after the component mounts
+    setIsMounted(true); 
   }, []);
 
   return (

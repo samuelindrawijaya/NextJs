@@ -42,7 +42,7 @@ const Sidebar: React.FC = () => {
     const handleCheckout = () => {
         handleClose();
         setTimeout(() => {
-            router.replace("/checkoutPages");
+            router.replace("/CheckoutPages");
         }, 300);
     };
 
