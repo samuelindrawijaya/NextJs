@@ -77,7 +77,7 @@ const Navbar: React.FC = () => {
                     {!isAuthenticated ? (
                         <>
                             <li>
-                                <Link href="/Login" className="text-black hover:text-gray-400">Login</Link>
+                                <Link href="/login" className="text-black hover:text-gray-400">Login</Link>
                             </li>
                             <li>
                                 <Link href="/register" className="text-black hover:text-gray-400">Register</Link>
