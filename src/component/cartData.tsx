@@ -48,7 +48,7 @@ const CartData: React.FC<CartDataProps> = ({ item }) => {
         </Link>
         <div className="w-full flex flex-col">
           <div className="flex justify-between mb-2">
-            <Link href={`/productList/${id}`} className="text-sm uppercase font-medium max-w-[240px] text-primary hover:underline">
+            <Link href={`/product/${id}`} className="text-sm uppercase font-medium max-w-[240px] text-primary hover:underline">
               {title}
             </Link>
             <div
